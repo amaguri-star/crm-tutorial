@@ -18,9 +18,11 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
+            {% if request.user.is_stuff %}
             <a class="nav-item nav-link active" href="#">Dashboard</a>
             <a class="nav-item nav-link" href="#">products</a>
             <a class="nav-item nav-link" href="#">customer</a>
+            {% endif %}
         </div>
     </div>
 
